@@ -1,0 +1,26 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit
+#Date/Time:
+#:T   Sat May 27 22:57:58 2023
+#------------------------------
+	#Reading CPU_map.ncd...
+	#Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "CPU" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+	#Design creation date: 2023.05.27.17.56.36
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+select site 'SLICE_X4Y39'
+	#site "SLICE_X4Y39",  type = SLICEL  (RPM grid X17Y156)
+	#5
+unselect -all

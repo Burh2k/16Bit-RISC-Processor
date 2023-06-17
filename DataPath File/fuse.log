@@ -1,0 +1,70 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/test_isim_beh.exe -prj C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/mux2x1.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/halfadder.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/mux4x1.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/fulladder.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/D_flip_flop.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/mux16bit.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/flipFlop16.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/decoder.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALUmsb.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU1.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/reg_file.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/mux2x1_16bit.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/mux2bit2x1.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/MainControl.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/BranchControl.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/CPU.v" into library work
+Analyzing Verilog file "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 15: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 16: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 17: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 18: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 19: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 20: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 21: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 22: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 23: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 24: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 25: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 26: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/CPU.v" Line 46: Size mismatch in connection of port <b>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 13: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 14: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/ALU.v" Line 27: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/reg_file.v" Line 19: Size mismatch in connection of port <i0>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/reg_file.v" Line 18: Size mismatch in connection of port <i0>. Formal port size is 16-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module mux2x1
+Compiling module halfadder
+Compiling module fulladder
+Compiling module mux4x1
+Compiling module ALU1
+Compiling module ALUmsb
+Compiling module ALU
+Compiling module BranchControl
+Compiling module mux2x1_16bit
+Compiling module D_latch
+Compiling module D_flip_flop
+Compiling module flipFlop16
+Compiling module mux16bit
+Compiling module decoder
+Compiling module reg_file
+Compiling module MainControl
+Compiling module mux2bit2x1
+Compiling module CPU
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 20 Verilog Units
+Built simulation executable C:/Users/Ammar/Desktop/Coal Project (1)/MIPSProcessor16bit/test_isim_beh.exe
+Fuse Memory Usage: 29792 KB
+Fuse CPU Usage: 718 ms

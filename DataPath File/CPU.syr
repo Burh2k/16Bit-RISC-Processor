@@ -1,0 +1,892 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux2x1.v" into library work
+Parsing module <mux2x1>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\halfadder.v" into library work
+Parsing module <halfadder>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux4x1.v" into library work
+Parsing module <mux4x1>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\fulladder.v" into library work
+Parsing module <fulladder>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\D_flip_flop.v" into library work
+Parsing module <D_flip_flop>.
+Parsing module <D_latch>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux16bit.v" into library work
+Parsing module <mux16bit>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\flipFlop16.v" into library work
+Parsing module <flipFlop16>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\decoder.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALUmsb.v" into library work
+Parsing module <ALUmsb>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU1.v" into library work
+Parsing module <ALU1>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" into library work
+Parsing module <reg_file>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux2x1_16bit.v" into library work
+Parsing module <mux2x1_16bit>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux2bit2x1.v" into library work
+Parsing module <mux2bit2x1>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\MainControl.v" into library work
+Parsing module <MainControl>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\BranchControl.v" into library work
+Parsing module <BranchControl>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v" into library work
+Parsing module <CPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <CPU>.
+
+Elaborating module <ALU>.
+
+Elaborating module <ALU1>.
+
+Elaborating module <mux2x1>.
+
+Elaborating module <fulladder>.
+
+Elaborating module <halfadder>.
+
+Elaborating module <mux4x1>.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 13: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 14: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 15: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 16: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 17: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 18: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 19: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 20: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 21: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 22: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 23: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 24: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 25: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 26: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <ALUmsb>.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 27: Size mismatch in connection of port <less>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" Line 27: Assignment to c16 ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v" Line 46: Size mismatch in connection of port <b>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v" Line 46: Assignment to Unused ignored, since the identifier is never used
+
+Elaborating module <BranchControl>.
+
+Elaborating module <mux2x1_16bit>.
+
+Elaborating module <reg_file>.
+
+Elaborating module <flipFlop16>.
+
+Elaborating module <D_flip_flop>.
+
+Elaborating module <D_latch>.
+WARNING:HDLCompiler:1127 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" Line 11: Assignment to q0 ignored, since the identifier is never used
+
+Elaborating module <mux16bit>.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" Line 18: Size mismatch in connection of port <i0>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" Line 19: Size mismatch in connection of port <i0>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <decoder>.
+WARNING:HDLCompiler:1127 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" Line 23: Assignment to w0 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" Line 11: Net <c0> does not have a driver.
+
+Elaborating module <MainControl>.
+WARNING:HDLCompiler:1127 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v" Line 72: Assignment to Unused2 ignored, since the identifier is never used
+
+Elaborating module <mux2bit2x1>.
+WARNING:Xst:2972 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" line 11. All outputs of instance <r0> of block <flipFlop16> are unconnected in block <reg_file>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CPU>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v".
+INFO:Xst:3210 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v" line 46: Output port <zero> of the instance <fetch> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\CPU.v" line 72: Output port <zero> of the instance <branch> is unconnected or connected to loadless signal.
+WARNING:Xst:2999 - Signal 'IMemory', unconnected in block 'CPU', is tied to its initial value.
+    Found 1024x16-bit single-port Read Only RAM <Mram_IMemory> for signal <IMemory>.
+    Found 1024x16-bit single-port RAM <Mram_DMemory> for signal <DMemory>.
+    Found 16-bit register for signal <IFID_PCplus2>.
+    Found 16-bit register for signal <IFID_IR>.
+    Found 16-bit register for signal <IDEX_IR>.
+    Found 3-bit register for signal <IDEX_ALUOp>.
+    Found 2-bit register for signal <IDEX_Branch>.
+    Found 1-bit register for signal <IDEX_MemWrite>.
+    Found 1-bit register for signal <IDEX_RegWrite>.
+    Found 1-bit register for signal <IDEX_MemtoReg>.
+    Found 1-bit register for signal <IDEX_ALUSrc>.
+    Found 1-bit register for signal <IDEX_RegDst>.
+    Found 16-bit register for signal <IDEX_PCplus2>.
+    Found 16-bit register for signal <IDEX_RD1>.
+    Found 16-bit register for signal <IDEX_RD2>.
+    Found 16-bit register for signal <IDEX_SignExt>.
+    Found 2-bit register for signal <IDEX_rt>.
+    Found 2-bit register for signal <IDEX_rd>.
+    Found 16-bit register for signal <EXMEM_IR>.
+    Found 1-bit register for signal <EXMEM_RegWrite>.
+    Found 1-bit register for signal <EXMEM_MemtoReg>.
+    Found 2-bit register for signal <EXMEM_Branch>.
+    Found 1-bit register for signal <EXMEM_MemWrite>.
+    Found 16-bit register for signal <EXMEM_Target>.
+    Found 1-bit register for signal <EXMEM_Zero>.
+    Found 16-bit register for signal <EXMEM_ALUOut>.
+    Found 16-bit register for signal <EXMEM_RD2>.
+    Found 2-bit register for signal <EXMEM_rd>.
+    Found 16-bit register for signal <MEMWB_IR>.
+    Found 1-bit register for signal <MEMWB_RegWrite>.
+    Found 1-bit register for signal <MEMWB_MemtoReg>.
+    Found 16-bit register for signal <MEMWB_MemOut>.
+    Found 16-bit register for signal <MEMWB_ALUOut>.
+    Found 2-bit register for signal <MEMWB_rd>.
+    Found 16-bit register for signal <PC>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred 266 D-type flip-flop(s).
+Unit <CPU> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v".
+INFO:Xst:3210 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU.v" line 27: Output port <carryout> of the instance <alu15> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <ALU1>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALU1.v".
+    Summary:
+	no macro.
+Unit <ALU1> synthesized.
+
+Synthesizing Unit <mux2x1>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux2x1.v".
+    Summary:
+	no macro.
+Unit <mux2x1> synthesized.
+
+Synthesizing Unit <fulladder>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\fulladder.v".
+    Summary:
+	no macro.
+Unit <fulladder> synthesized.
+
+Synthesizing Unit <halfadder>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\halfadder.v".
+    Summary:
+Unit <halfadder> synthesized.
+
+Synthesizing Unit <mux4x1>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux4x1.v".
+    Summary:
+	no macro.
+Unit <mux4x1> synthesized.
+
+Synthesizing Unit <ALUmsb>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\ALUmsb.v".
+    Summary:
+	no macro.
+Unit <ALUmsb> synthesized.
+
+Synthesizing Unit <BranchControl>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\BranchControl.v".
+    Summary:
+	no macro.
+Unit <BranchControl> synthesized.
+
+Synthesizing Unit <mux2x1_16bit>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux2x1_16bit.v".
+    Summary:
+	no macro.
+Unit <mux2x1_16bit> synthesized.
+
+Synthesizing Unit <reg_file>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v".
+INFO:Xst:3210 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" line 11: Output port <Q> of the instance <r0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\reg_file.v" line 23: Output port <D0> of the instance <dec> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <c0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <reg_file> synthesized.
+
+Synthesizing Unit <flipFlop16>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\flipFlop16.v".
+    Summary:
+	no macro.
+Unit <flipFlop16> synthesized.
+
+Synthesizing Unit <D_flip_flop>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\D_flip_flop.v".
+    Summary:
+	no macro.
+Unit <D_flip_flop> synthesized.
+
+Synthesizing Unit <D_latch>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\D_flip_flop.v".
+    Summary:
+	no macro.
+Unit <D_latch> synthesized.
+
+Synthesizing Unit <mux16bit>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux16bit.v".
+    Summary:
+	no macro.
+Unit <mux16bit> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\decoder.v".
+    Summary:
+	no macro.
+Unit <decoder> synthesized.
+
+Synthesizing Unit <MainControl>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\MainControl.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Control<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  10 Latch(s).
+Unit <MainControl> synthesized.
+
+Synthesizing Unit <mux2bit2x1>.
+    Related source file is "C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit\mux2bit2x1.v".
+    Summary:
+	no macro.
+Unit <mux2bit2x1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x16-bit single-port RAM                           : 1
+ 1024x16-bit single-port Read Only RAM                 : 1
+# Registers                                            : 33
+ 1-bit register                                        : 11
+ 16-bit register                                       : 15
+ 2-bit register                                        : 6
+ 3-bit register                                        : 1
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+# Xors                                                 : 96
+ 1-bit xor2                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mux1> is unconnected in block <mux2>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <CPU>.
+INFO:Xst:3226 - The RAM <Mram_IMemory> will be implemented as a BLOCK RAM, absorbing the following register(s): <IFID_IR>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock>         | fall     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PC<10:1>>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <IFID_IR>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_DMemory> will be implemented as a BLOCK RAM, absorbing the following register(s): <MEMWB_MemOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clock>         | fall     |
+    |     weA            | connected to signal <EXMEM_MemWrite> | high     |
+    |     addrA          | connected to signal <EXMEM_ALUOut<10:1>> |          |
+    |     diA            | connected to signal <EXMEM_RD2>     |          |
+    |     doA            | connected to signal <MEMWB_MemOut>  |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <CPU> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 1024x16-bit single-port block RAM                     : 1
+ 1024x16-bit single-port block Read Only RAM           : 1
+# Registers                                            : 234
+ Flip-Flops                                            : 234
+# Xors                                                 : 96
+ 1-bit xor2                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_0> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_IR_0> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_1> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_IR_1> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_2> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_IR_2> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_3> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_IR_3> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_4> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_IR_4> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_5> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_IR_5> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_6> in Unit <CPU> is equivalent to the following 2 FFs/Latches, which will be removed : <IDEX_IR_6> <IDEX_rd_0> 
+INFO:Xst:2261 - The FF/Latch <IDEX_SignExt_7> in Unit <CPU> is equivalent to the following 10 FFs/Latches, which will be removed : <IDEX_SignExt_8> <IDEX_SignExt_9> <IDEX_SignExt_10> <IDEX_SignExt_11> <IDEX_SignExt_12> <IDEX_SignExt_13> <IDEX_SignExt_14> <IDEX_SignExt_15> <IDEX_IR_7> <IDEX_rd_1> 
+INFO:Xst:2261 - The FF/Latch <IDEX_IR_8> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_rt_0> 
+INFO:Xst:2261 - The FF/Latch <IDEX_IR_9> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IDEX_rt_1> 
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f13/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f14/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f2/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f2/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f10/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f15/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f8/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f8/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f4/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f12/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f0/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f5/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f13/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f4/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f6/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f2/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f14/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f5/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f3/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f7/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f3/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f8/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f4/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f9/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f9/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f1/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f1/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f6/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f11/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f10/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f0/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f7/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f1/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f14/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f12/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f9/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f12/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f14/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f2/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f3/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f10/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f15/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f5/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f1/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f3/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f6/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f4/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f4/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f8/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f5/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f0/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f15/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f9/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f10/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f15/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f0/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f10/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f7/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f6/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f11/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f12/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f0/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f11/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f8/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f13/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f2/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f9/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f14/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f7/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f3/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f11/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f11/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f11/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f0/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f4/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f12/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f1/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f14/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f2/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f13/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f7/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f3/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f5/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f6/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f9/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f15/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f6/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f5/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f10/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f15/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f13/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f7/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r3/f13/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f12/D1/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r2/f1/D2/n0004.
+WARNING:Xst:2170 - Unit reg_file : the following signal(s) form a combinatorial loop: r1/f8/D1/n0004.
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <reg_file> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <MainControl> ...
+WARNING:Xst:1710 - FF/Latch <IFID_PCplus2_0> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_0> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IDEX_PCplus2_0> (without init value) has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <EXMEM_Target_0> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 5.
+FlipFlop IDEX_ALUOp_2 has been replicated 1 time(s)
+FlipFlop IDEX_ALUSrc has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <CPU> :
+	Found 2-bit shift register for signal <IDEX_PCplus2_1>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_3>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_5>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_7>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_9>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_11>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_13>.
+	Found 2-bit shift register for signal <IDEX_PCplus2_15>.
+	Found 2-bit shift register for signal <EXMEM_Branch_0>.
+	Found 2-bit shift register for signal <EXMEM_Branch_1>.
+	Found 2-bit shift register for signal <EXMEM_MemWrite>.
+	Found 3-bit shift register for signal <MEMWB_RegWrite>.
+	Found 3-bit shift register for signal <MEMWB_MemtoReg>.
+Unit <CPU> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 184
+ Flip-Flops                                            : 184
+# Shift Registers                                      : 13
+ 2-bit shift register                                  : 11
+ 3-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 306
+#      GND                         : 1
+#      INV                         : 16
+#      LUT2                        : 2
+#      LUT3                        : 143
+#      LUT4                        : 18
+#      LUT5                        : 62
+#      LUT6                        : 58
+#      MUXF7                       : 5
+#      VCC                         : 1
+# FlipFlops/Latches                : 207
+#      FD_1                        : 184
+#      FDE                         : 13
+#      LD                          : 10
+# RAMS                             : 2
+#      RAMB16BWER                  : 2
+# Shift Registers                  : 13
+#      SRLC16E                     : 13
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 97
+#      IBUF                        : 1
+#      OBUF                        : 96
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             207  out of  18224     1%  
+ Number of Slice LUTs:                  312  out of   9112     3%  
+    Number used as Logic:               299  out of   9112     3%  
+    Number used as Memory:               13  out of   2176     0%  
+       Number used as SRL:               13
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    399
+   Number with an unused Flip Flop:     192  out of    399    48%  
+   Number with an unused LUT:            87  out of    399    21%  
+   Number of fully used LUT-FF pairs:   120  out of    399    30%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          97
+ Number of bonded IOBs:                  97  out of    232    41%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------+---------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)     | Load  |
+---------------------------------------+---------------------------+-------+
+clock                                  | IBUF+BUFG                 | 212   |
+MainCtr/_n0041<0>(MainCtr/_n0041<0>1:O)| NONE(*)(MainCtr/Control_9)| 10    |
+---------------------------------------+---------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.021ns (Maximum Frequency: 124.670MHz)
+   Minimum input arrival time before clock: 5.812ns
+   Maximum output required time after clock: 5.990ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 8.021ns (frequency: 124.670MHz)
+  Total number of paths / destination ports: 2680 / 238
+-------------------------------------------------------------------------
+Delay:               8.021ns (Levels of Logic = 9)
+  Source:            IDEX_RD1_0 (FF)
+  Destination:       EXMEM_ALUOut_14 (FF)
+  Source Clock:      clock falling
+  Destination Clock: clock falling
+
+  Data Path: IDEX_RD1_0 to EXMEM_ALUOut_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            11   0.447   1.111  IDEX_RD1_0 (IDEX_RD1_0)
+     LUT5:I2->O            1   0.205   0.000  ex/alu1/adder1/C1_G (N34)
+     MUXF7:I1->O           3   0.140   0.651  ex/alu1/adder1/C1 (ex/c2)
+     LUT6:I5->O            3   0.205   0.651  ex/alu3/adder1/C1 (ex/c4)
+     LUT6:I5->O            3   0.205   0.651  ex/alu5/adder1/C1 (ex/c6)
+     LUT6:I5->O            3   0.205   0.651  ex/alu7/adder1/C1 (ex/c8)
+     LUT6:I5->O            3   0.205   0.651  ex/alu9/adder1/C1 (ex/c10)
+     LUT6:I5->O            6   0.205   0.745  ex/alu11/adder1/C1 (ex/c12)
+     LUT6:I5->O            1   0.205   0.580  ex/alu13/adder1/C1 (ex/c14)
+     LUT6:I5->O            1   0.205   0.000  ex/alu14/mux2/mux3/OUT1 (ALUOut<14>)
+     FD_1:D                    0.102          EXMEM_ALUOut_14
+    ----------------------------------------
+    Total                      8.021ns (2.329ns logic, 5.692ns route)
+                                       (29.0% logic, 71.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 192 / 32
+-------------------------------------------------------------------------
+Offset:              5.812ns (Levels of Logic = 5)
+  Source:            clock (PAD)
+  Destination:       IDEX_RD1_0 (FF)
+  Destination Clock: clock falling
+
+  Data Path: clock to IDEX_RD1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.651  clock_IBUF (clock_IBUF)
+     LUT4:I3->O           32   0.205   1.520  rf/c31 (rf/c3)
+     LUT3:I0->O            2   0.205   0.617  rf/r3/f15/D1/n00041 (rf/r3/f15/D1/n0004)
+     LUT3:I2->O            3   0.205   0.879  rf/r3/f15/D2/n00041 (rf/r3/f15/D2/n0004)
+     LUT5:I2->O            1   0.205   0.000  rf/mux1/mux15/mux3/OUT1 (RD1<15>)
+     FD_1:D                    0.102          IDEX_RD1_15
+    ----------------------------------------
+    Total                      5.812ns (2.144ns logic, 3.668ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 127 / 95
+-------------------------------------------------------------------------
+Offset:              5.990ns (Levels of Logic = 2)
+  Source:            Mram_DMemory (RAM)
+  Destination:       WD<15> (PAD)
+  Source Clock:      clock falling
+
+  Data Path: Mram_DMemory to WD<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA15    1   1.850   0.684  Mram_DMemory (MEMWB_MemOut<15>)
+     LUT3:I1->O            4   0.203   0.683  MemToReg/mux16/OUT1 (WD_15_OBUF)
+     OBUF:I->O                 2.571          WD_15_OBUF (WD<15>)
+    ----------------------------------------
+    Total                      5.990ns (4.624ns logic, 1.366ns route)
+                                       (77.2% logic, 22.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock MainCtr/_n0041<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |         |         |    3.270|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+MainCtr/_n0041<0>|         |         |    1.216|         |
+clock            |         |         |    8.021|         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.58 secs
+ 
+--> 
+
+Total memory usage is 4501384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  169 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

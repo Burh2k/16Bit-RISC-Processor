@@ -1,0 +1,34 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\Ammar\Desktop\Coal Project (1)\MIPSProcessor16bit
+#Date/Time:
+#:T   Sat May 27 23:04:25 2023
+#------------------------------
+	#Reading CPU.ncd...
+	#Loading device for application Rf_Device from file '6slx16.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "CPU" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
+	#Design creation date: 2023.05.27.17.56.36
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+hilite -c teal
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#3
+hilite -c tan
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#4
+hilite -c steel_blue
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#5
+hilite -c tomato
+	#WARNING:FPGAEditor:48 - Nothing to hilite -- there is nothing selected.
+	#6
+unselect -all
+	#7
+select site 'TIEOFF_X7Y60'
+	#site "TIEOFF_X7Y60",  type = TIEOFF  (RPM grid X16Y120)

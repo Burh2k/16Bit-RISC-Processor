@@ -1,0 +1,155 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf
+
+Design file:              CPU.ncd
+Physical constraint file: CPU.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clock to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+EXMEM_IR<0> |         9.483(F)|      SLOW  |         5.212(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<1> |         9.555(F)|      SLOW  |         5.240(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<2> |         9.253(F)|      SLOW  |         5.022(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<3> |         8.930(F)|      SLOW  |         4.834(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<4> |         9.093(F)|      SLOW  |         4.991(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<5> |         8.935(F)|      SLOW  |         4.842(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<6> |         8.907(F)|      SLOW  |         4.845(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<7> |         8.892(F)|      SLOW  |         4.778(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<8> |         9.130(F)|      SLOW  |         4.948(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<9> |         9.101(F)|      SLOW  |         4.925(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<10>|         9.392(F)|      SLOW  |         5.170(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<11>|         8.798(F)|      SLOW  |         4.759(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<12>|         8.612(F)|      SLOW  |         4.718(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<13>|         7.872(F)|      SLOW  |         4.206(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<14>|         8.021(F)|      SLOW  |         4.281(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+EXMEM_IR<15>|         8.019(F)|      SLOW  |         4.323(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<0>  |         9.419(F)|      SLOW  |         5.127(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<1>  |         9.419(F)|      SLOW  |         5.127(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<2>  |         9.461(F)|      SLOW  |         5.208(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<3>  |         9.443(F)|      SLOW  |         5.154(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<4>  |        10.016(F)|      SLOW  |         5.547(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<5>  |         9.874(F)|      SLOW  |         5.464(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<6>  |        10.151(F)|      SLOW  |         5.670(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<7>  |        10.567(F)|      SLOW  |         5.890(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<8>  |        10.289(F)|      SLOW  |         5.700(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<9>  |         9.286(F)|      SLOW  |         5.107(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<10> |         9.839(F)|      SLOW  |         5.419(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<11> |         9.593(F)|      SLOW  |         5.286(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<12> |         9.353(F)|      SLOW  |         5.082(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<13> |         9.871(F)|      SLOW  |         5.411(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<14> |         9.512(F)|      SLOW  |         5.172(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IDEX_IR<15> |         9.302(F)|      SLOW  |         5.038(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<0>  |        11.070(F)|      SLOW  |         6.224(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<1>  |        10.752(F)|      SLOW  |         6.056(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<2>  |        10.775(F)|      SLOW  |         6.073(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<3>  |        10.661(F)|      SLOW  |         5.986(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<4>  |        11.315(F)|      SLOW  |         6.389(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<5>  |        11.100(F)|      SLOW  |         6.266(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<6>  |        11.578(F)|      SLOW  |         6.567(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<7>  |        11.256(F)|      SLOW  |         6.394(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<8>  |        11.853(F)|      SLOW  |         6.802(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<9>  |        11.226(F)|      SLOW  |         6.432(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<10> |        11.716(F)|      SLOW  |         6.643(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<11> |        11.299(F)|      SLOW  |         6.443(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<12> |        11.044(F)|      SLOW  |         6.274(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<13> |        12.322(F)|      SLOW  |         7.096(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<14> |        11.213(F)|      SLOW  |         6.453(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+IFID_IR<15> |        12.568(F)|      SLOW  |         7.251(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<0> |         8.177(F)|      SLOW  |         4.425(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<1> |         8.290(F)|      SLOW  |         4.527(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<2> |         7.894(F)|      SLOW  |         4.208(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<3> |         8.071(F)|      SLOW  |         4.396(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<4> |         8.040(F)|      SLOW  |         4.322(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<5> |         8.116(F)|      SLOW  |         4.351(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<6> |         7.876(F)|      SLOW  |         4.195(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<7> |         7.699(F)|      SLOW  |         4.077(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<8> |         8.098(F)|      SLOW  |         4.340(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<9> |         7.920(F)|      SLOW  |         4.239(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<10>|         7.895(F)|      SLOW  |         4.211(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<11>|         7.841(F)|      SLOW  |         4.230(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<12>|         8.081(F)|      SLOW  |         4.371(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<13>|         7.618(F)|      SLOW  |         4.018(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<14>|         7.835(F)|      SLOW  |         4.190(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+MEMWB_IR<15>|         7.835(F)|      SLOW  |         4.190(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<1>       |         8.878(F)|      SLOW  |         4.811(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<2>       |         8.666(F)|      SLOW  |         4.666(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<3>       |         8.673(F)|      SLOW  |         4.673(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<4>       |         8.638(F)|      SLOW  |         4.617(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<5>       |         8.654(F)|      SLOW  |         4.607(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<6>       |         8.709(F)|      SLOW  |         4.662(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<7>       |         9.267(F)|      SLOW  |         5.058(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<8>       |         9.204(F)|      SLOW  |         4.994(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<9>       |         8.855(F)|      SLOW  |         4.796(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<10>      |         9.255(F)|      SLOW  |         5.061(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<11>      |         8.633(F)|      SLOW  |         4.635(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<12>      |         8.370(F)|      SLOW  |         4.438(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<13>      |         8.889(F)|      SLOW  |         4.784(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<14>      |         9.087(F)|      SLOW  |         4.918(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+PC<15>      |         9.201(F)|      SLOW  |         5.004(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<0>       |        12.041(F)|      SLOW  |         5.586(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<1>       |        11.880(F)|      SLOW  |         5.244(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<2>       |        12.712(F)|      SLOW  |         5.810(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<3>       |        11.858(F)|      SLOW  |         5.167(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<4>       |        12.043(F)|      SLOW  |         5.948(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<5>       |        11.869(F)|      SLOW  |         5.180(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<6>       |        12.402(F)|      SLOW  |         5.821(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<7>       |        12.117(F)|      SLOW  |         5.839(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<8>       |        12.380(F)|      SLOW  |         5.775(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<9>       |        12.365(F)|      SLOW  |         5.434(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<10>      |        12.013(F)|      SLOW  |         5.570(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<11>      |        12.017(F)|      SLOW  |         5.554(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<12>      |        11.909(F)|      SLOW  |         5.788(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<13>      |        12.111(F)|      SLOW  |         5.699(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<14>      |        12.879(F)|      SLOW  |         6.332(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+WD<15>      |        12.886(F)|      SLOW  |         6.388(F)|      FAST  |clock_IBUF_BUFG   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |         |         |    5.069|    6.759|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat May 27 23:30:54 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4558 MB
+
+
+
